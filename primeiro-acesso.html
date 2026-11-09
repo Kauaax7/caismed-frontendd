@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#132C77" />
+  <meta name="description" content="CaisMed: rede de clínicas com agendamento online, carteirinha digital e teleconsulta." />
+  <title>CaisMed | Primeiro Acesso</title>
+  <script>(function(d,l){var t=l.getItem("tema");d.setAttribute("data-tema",t==="escuro"||t==="preto"?"escuro":"claro");var f=l.getItem("fonte");if(f)d.classList.add("fonte-"+f)})(document.documentElement,localStorage)</script>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-pagina="primeiro-acesso">
+<div class="auth">
+<aside class="auth-side"><a class="brand" href="index.html"><span class="logo-icon"></span><span>CaisMed</span></a><div class="stack"><h2>Bem-vindo à CaisMed</h2><p>O cadastro é feito na recepção. Aqui você só cria a sua senha.</p></div><small>Dados de demonstração guardados só neste navegador.</small></aside>
+<main class="auth-main"><header class="auth-top"><a class="ibtn" href="index.html" aria-label="Voltar ao site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></a><a class="brand" href="index.html"><span class="logo-icon"></span><span>CaisMed</span></a><span class="grow"></span><span data-slot="a11y"></span></header>
+<div class="auth-box"><div class="desk-only" style="justify-content:space-between;align-items:center"><a class="link" href="index.html">Voltar ao Site</a><span data-slot="a11y"></span></div><h1 style="margin-bottom:6px">Primeiro Acesso</h1><p class="lead" style="margin-bottom:16px">Informe o CPF cadastrado na clínica e crie a sua senha.</p>
+<form id="primeiro-acesso-form" novalidate><div class="field"><label for="cpf">CPF</label><input id="cpf" name="cpf" data-valida="cpf" required /></div><div class="field"><label for="senha">Nova senha</label><input id="senha" type="password" minlength="6" autocomplete="new-password" required /><span class="hint">Use pelo menos 6 caracteres.</span></div><div class="field"><label for="senha2">Confirmar senha</label><input id="senha2" type="password" minlength="6" autocomplete="new-password" required /></div>
+<label class="check"><input type="checkbox" id="aceite" /> Li e aceito os termos de uso e o tratamento dos meus dados de saúde, conforme a LGPD.</label><label class="check"><input type="checkbox" id="marketing" /> Quero receber novidades e campanhas de saúde (opcional).</label>
+<p class="err-msg" id="erro-pa" role="alert" hidden></p><button class="btn block" type="submit" style="margin-top:10px">Criar Senha</button><div style="text-align:center;margin-top:10px"><a class="link" href="login.html">Voltar ao Login</a></div></form></div></main></div>
+  <script src="app.js"></script>
+  <script>if(typeof DB==="undefined"){var d=document.createElement("div");d.setAttribute("role","alert");d.style.cssText="position:fixed;inset:auto 12px 12px 12px;z-index:99;background:#8C1717;color:#fff;padding:14px 16px;border-radius:12px;font:700 15px/1.4 system-ui,sans-serif";d.innerHTML="O arquivo app.js não foi carregado, por isso os botões não funcionam. Confira se o app.js está na mesma pasta dos arquivos .html e atualize a página com Ctrl+F5.";document.body.appendChild(d)}</script>
+</body>
+</html>

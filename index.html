@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#132C77" />
+  <meta name="description" content="CaisMed: rede de clínicas com agendamento online, carteirinha digital e teleconsulta." />
+  <title>CaisMed | Rede de Clínicas</title>
+  <script>(function(d,l){var t=l.getItem("tema");d.setAttribute("data-tema",t==="escuro"||t==="preto"?"escuro":"claro");var f=l.getItem("fonte");if(f)d.classList.add("fonte-"+f)})(document.documentElement,localStorage)</script>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-pagina="landing">
+<div class="site">
+<header class="site-header"><a class="brand" href="index.html"><span class="logo-icon"></span><span>CaisMed</span></a><span class="grow"></span><nav aria-label="Seções do site"><a href="index.html#sobre">Quem Somos</a><a href="index.html#especialidades">Especialidades</a><a href="index.html#como-funciona">Como Trabalhamos</a><a href="index.html#unidades">Unidades</a></nav><span data-slot="a11y"></span><a class="btn" href="login.html">Entrar</a></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div class="stack" style="gap:18px"><h1>Cuidado Com a Saúde Perto de Você</h1><p>A CaisMed é uma rede de clínicas com consultas, exames e teleconsultas em três unidades da Região Metropolitana do Recife.</p><div class="row"><a class="btn" href="login.html">Acessar Minha Conta</a><a class="btn outline" href="#unidades">Ver Nossas Unidades</a></div></div>
+  <div class="finder" role="region" aria-label="A rede em números"><h2>A Rede em Números</h2><div class="stats" id="numeros" style="margin:12px 0 0"></div></div>
+</div></section>
+<section class="section" id="sobre"><div class="wrap"><h2 style="margin-bottom:14px">Quem Somos</h2><div class="grid g3">
+  <div class="card stack sm"><b>Atendimento Para a Família</b><p class="muted">Da pediatria à clínica geral, médicos que acompanham cada paciente e conhecem o histórico dele.</p></div>
+  <div class="card stack sm"><b>Mais Perto, Mais Prático</b><p class="muted">Três unidades com horários estendidos, consultas por vídeo e exames no mesmo lugar.</p></div>
+  <div class="card stack sm"><b>Seus Dados Protegidos</b><p class="muted">Prontuário só para quem atende você e acesso registrado, seguindo a LGPD.</p></div></div></div></section>
+<section class="section alt" id="especialidades"><div class="wrap"><h2 style="margin-bottom:14px">Especialidades</h2><div class="esp-grid" id="esp-grid"></div></div></section>
+<section class="section" id="como-funciona"><div class="wrap"><h2 style="margin-bottom:14px">Como Trabalhamos</h2><div class="steps-how">
+  <div class="card stack sm"><b class="n">1</b><b>Cadastro na recepção</b><p class="muted">Vá a qualquer unidade com um documento. A recepção faz o seu cadastro e escolhe o plano com você.</p></div>
+  <div class="card stack sm"><b class="n">2</b><b>Acesso ao aplicativo</b><p class="muted">Com o CPF cadastrado, você cria a sua senha no primeiro acesso e entra na sua área.</p></div>
+  <div class="card stack sm"><b class="n">3</b><b>Atendimento e acompanhamento</b><p class="muted">Na sua área você acompanha consultas, receitas, resultados e a carteirinha digital.</p></div></div></div></section>
+<section class="section alt" id="unidades"><div class="wrap"><h2 style="margin-bottom:14px">Onde Atendemos</h2><div class="grid g3" id="unidades-lista"></div></div></section>
+</main>
+<footer class="footer"><div class="wrap row between"><span>CaisMed, rede de clínicas. Projeto de demonstração.</span><span><a href="login.html">Entrar</a> &nbsp; <a href="ajuda.html">Fale Conosco</a></span></div></footer>
+</div>
+  <script src="app.js"></script>
+  <script>if(typeof DB==="undefined"){var d=document.createElement("div");d.setAttribute("role","alert");d.style.cssText="position:fixed;inset:auto 12px 12px 12px;z-index:99;background:#8C1717;color:#fff;padding:14px 16px;border-radius:12px;font:700 15px/1.4 system-ui,sans-serif";d.innerHTML="O arquivo app.js não foi carregado, por isso os botões não funcionam. Confira se o app.js está na mesma pasta dos arquivos .html e atualize a página com Ctrl+F5.";document.body.appendChild(d)}</script>
+</body>
+</html>
